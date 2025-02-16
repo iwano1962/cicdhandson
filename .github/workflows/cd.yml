@@ -9,6 +9,7 @@ jobs:
     name: cd
     runs-on: ubuntu-latest
     permissions:
+      id-token: write
       contents: read
       packages: write
     steps:
