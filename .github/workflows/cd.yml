@@ -20,7 +20,7 @@ jobs:
         run: docker build -t ghcr.io/${{ github.repository }}:latest .
       - name: Docker イメージをプッシュする
         run: docker push ghcr.io/${{ github.repository }}:latest
-      - name: OIDC 連携により AWS の認証情報を取得する。
+      - name: OIDC 連携により AWS の認証情報を取得する。。
         uses: aws-actions/configure-aws-credentials@v4
         with:
           aws-region: ap-northeast-1
